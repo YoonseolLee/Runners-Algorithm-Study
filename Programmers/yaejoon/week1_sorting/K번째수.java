@@ -1,4 +1,4 @@
-package yaejoon.week1_sorting;
+package Programmers.yaejoon.week1_sorting;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
