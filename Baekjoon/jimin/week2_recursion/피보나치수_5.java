@@ -5,22 +5,28 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class 피보나치수_5 {
+    static int n;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+        n = Integer.parseInt(br.readLine());
         if (n < 2) {
             System.out.println(n);
         } else {
-            System.out.println(fibonacci(0, 1, n - 1));
+            int[] memo = new int[n + 1];
+            memo[0] = 0;
+            memo[1] = 1;
+            System.out.println(fibonacci(n, memo));
         }
     }
 
-    static int fibonacci(int n1, int n2, int count) {
-        if (count == 1) {
-            return n1 + n2;
-        }
-        return fibonacci(n2, n1 + n2, count - 1);
-    }
+    static int fibonacci(int count, int[] memo) {
+        memo[n - (count - 2)] = memo[n - count] + memo[n - (count - 1)];
 
+        if (count <= 2) {
+            return memo[n - (count - 2)];
+        }
+
+        return fibonacci(count - 1, memo);
+    }
 }
