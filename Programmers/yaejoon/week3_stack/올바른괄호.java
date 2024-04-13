@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class 올바른괄호 {
   public static void main(String[] args) throws IOException {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String a = br.readLine();
      boolean b = solution(a);
     System.out.println(b);
