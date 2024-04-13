@@ -28,6 +28,7 @@ public class 특정_거리의_도시찾기 {
             nodes[A].add(B);
         }
 
+        //distance를 이용해서 방문 여부, 각 도시까지의 최단 거리 기록
         int[] distance = new int[N + 1];
         Arrays.fill(distance, -1);
 
