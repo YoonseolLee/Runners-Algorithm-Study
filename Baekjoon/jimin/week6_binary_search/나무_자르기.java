@@ -31,7 +31,7 @@ public class 나무_자르기 {
             if (sum >= M) start = middle + 1;
             else if (sum < M) end = middle - 1;
         }
-        System.out.println(middle);
+        System.out.println(end);
     }
 
     private static long sum(int height, int[] trees) {
