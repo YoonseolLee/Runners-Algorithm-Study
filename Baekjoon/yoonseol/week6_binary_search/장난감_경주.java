@@ -3,7 +3,7 @@ package Baekjoon.yoonseol.week6_binary_search;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class 장난감경주 {
+public class 장난감_경주 {
 
     private static int T, N, X, Y;
     private static double myCar;
@@ -29,7 +29,6 @@ public class 장난감경주 {
 
             double min = Double.MAX_VALUE;
             int answer = -1;
-
             for (int i = 0; i < N; i++) {
                 int speed = Integer.parseInt(st.nextToken());
                 double time = (double) X / speed;

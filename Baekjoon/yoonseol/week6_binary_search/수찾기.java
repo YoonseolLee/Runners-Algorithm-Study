@@ -1,3 +1,5 @@
+package Baekjoon.yoonseol.week6_binary_search;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
